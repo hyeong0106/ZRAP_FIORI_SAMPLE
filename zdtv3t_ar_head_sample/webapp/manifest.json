@@ -1,0 +1,151 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "zdtv3tarheadsample",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.18.3",
+      "toolsId": "4f314ff6-5fb8-4357-ba5f-d1220de791a7"
+    },
+    "dataSources": {
+      "annotation": {
+        "type": "ODataAnnotation",
+        "uri": "annotations/annotation.xml",
+        "settings": {
+          "localUri": "annotations/annotation.xml"
+        }
+      },
+      "mainService": {
+        "uri": "/sap/opu/odata4/sap/zrap_ui_zdtv3t_ar_head/srvd/sap/zrap_srv_zdtv3t_ar_head/0001/",
+        "type": "OData",
+        "settings": {
+          "annotations": [
+            "annotation"
+          ],
+          "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.133.4",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "zdtv3tarheadsample.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "ZRAP_C_ZDTV3T_AR_HEADList",
+          "target": "ZRAP_C_ZDTV3T_AR_HEADList"
+        },
+        {
+          "pattern": "ZRAP_C_ZDTV3T_AR_HEAD({key}):?query:",
+          "name": "ZRAP_C_ZDTV3T_AR_HEADObjectPage",
+          "target": "ZRAP_C_ZDTV3T_AR_HEADObjectPage"
+        }
+      ],
+      "targets": {
+        "ZRAP_C_ZDTV3T_AR_HEADList": {
+          "type": "Component",
+          "id": "ZRAP_C_ZDTV3T_AR_HEADList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/ZRAP_C_ZDTV3T_AR_HEAD",
+              "variantManagement": "Page",
+              "navigation": {
+                "ZRAP_C_ZDTV3T_AR_HEAD": {
+                  "detail": {
+                    "route": "ZRAP_C_ZDTV3T_AR_HEADObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ZRAP_C_ZDTV3T_AR_HEADObjectPage": {
+          "type": "Component",
+          "id": "ZRAP_C_ZDTV3T_AR_HEADObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/ZRAP_C_ZDTV3T_AR_HEAD"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
+}

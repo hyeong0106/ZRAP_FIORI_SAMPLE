@@ -1,0 +1,29 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed Jul 30 2025 00:37:25 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "SAP System (ABAP Environment on SAP Business Technology Platform)",
+    "metadataFilename": "",
+    "serviceUrl": "https://f3cc5dd0-460a-4857-8feb-b1d471dd9dbc.abap.us10.hana.ondemand.com/sap/opu/odata4/sap/zrap_ui_zdtv3t_ar_head/srvd/sap/zrap_srv_zdtv3t_ar_head/0001/",
+    "appName": "zdtv3t_ar_head_sample",
+    "appTitle": "ZDTV3_AR_HEAD",
+    "appDescription": "An SAP Fiori application.",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.133.4",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.18.3",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "ZRAP_C_ZDTV3T_AR_HEAD"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

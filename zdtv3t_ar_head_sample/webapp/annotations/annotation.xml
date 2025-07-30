@@ -1,0 +1,326 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata4/sap/zrap_ui_zdtv3t_ar_head/srvd/sap/zrap_srv_zdtv3t_ar_head/0001/$metadata">
+        <edmx:Include Namespace="com.sap.gateway.srvd.zrap_srv_zdtv3t_ar_head.v0001" Alias="SAP__self"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="SAP__self.ZRAP_C_ZDTV3T_AR_HEADType">
+                <Annotation Term="UI.FieldGroup" Qualifier="GeneratedGroup">
+                    <Record Type="UI.FieldGroupType">
+                        <PropertyValue Property="Data">
+                            <Collection>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="bukrs"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="issue_date"/>
+                                    <PropertyValue Property="Value" Path="issue_date"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bupla"/>
+                                    <PropertyValue Property="Value" Path="bupla"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="inv_seq"/>
+                                    <PropertyValue Property="Value" Path="inv_seq"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="inter_no"/>
+                                    <PropertyValue Property="Value" Path="inter_no"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="inv_sign"/>
+                                    <PropertyValue Property="Value" Path="inv_sign"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="asp_code"/>
+                                    <PropertyValue Property="Value" Path="asp_code"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="type_code"/>
+                                    <PropertyValue Property="Value" Path="type_code"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="purp_code"/>
+                                    <PropertyValue Property="Value" Path="purp_code"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="amend_code"/>
+                                    <PropertyValue Property="Value" Path="amend_code"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="issue_id_old"/>
+                                    <PropertyValue Property="Value" Path="issue_id_old"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="desc_text1"/>
+                                    <PropertyValue Property="Value" Path="desc_text1"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="desc_text2"/>
+                                    <PropertyValue Property="Value" Path="desc_text2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="desc_text3"/>
+                                    <PropertyValue Property="Value" Path="desc_text3"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_id"/>
+                                    <PropertyValue Property="Value" Path="su_id"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_min"/>
+                                    <PropertyValue Property="Value" Path="su_min"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_name"/>
+                                    <PropertyValue Property="Value" Path="su_name"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_repres"/>
+                                    <PropertyValue Property="Value" Path="su_repres"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_addr"/>
+                                    <PropertyValue Property="Value" Path="su_addr"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_bustype"/>
+                                    <PropertyValue Property="Value" Path="su_bustype"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_indtype"/>
+                                    <PropertyValue Property="Value" Path="su_indtype"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_deptname"/>
+                                    <PropertyValue Property="Value" Path="su_deptname"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_persname"/>
+                                    <PropertyValue Property="Value" Path="su_persname"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_telno"/>
+                                    <PropertyValue Property="Value" Path="su_telno"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_hpno"/>
+                                    <PropertyValue Property="Value" Path="su_hpno"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="su_email"/>
+                                    <PropertyValue Property="Value" Path="su_email"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_typecode"/>
+                                    <PropertyValue Property="Value" Path="ip_typecode"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_id"/>
+                                    <PropertyValue Property="Value" Path="ip_id"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_min"/>
+                                    <PropertyValue Property="Value" Path="ip_min"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_name"/>
+                                    <PropertyValue Property="Value" Path="ip_name"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_repres"/>
+                                    <PropertyValue Property="Value" Path="ip_repres"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_addr"/>
+                                    <PropertyValue Property="Value" Path="ip_addr"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_bustype"/>
+                                    <PropertyValue Property="Value" Path="ip_bustype"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_indtype"/>
+                                    <PropertyValue Property="Value" Path="ip_indtype"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_deptname1"/>
+                                    <PropertyValue Property="Value" Path="ip_deptname1"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_persname1"/>
+                                    <PropertyValue Property="Value" Path="ip_persname1"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_telno1"/>
+                                    <PropertyValue Property="Value" Path="ip_telno1"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_hpno1"/>
+                                    <PropertyValue Property="Value" Path="ip_hpno1"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_email1"/>
+                                    <PropertyValue Property="Value" Path="ip_email1"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_deptname2"/>
+                                    <PropertyValue Property="Value" Path="ip_deptname2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_persname2"/>
+                                    <PropertyValue Property="Value" Path="ip_persname2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_telno2"/>
+                                    <PropertyValue Property="Value" Path="ip_telno2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_hpno2"/>
+                                    <PropertyValue Property="Value" Path="ip_hpno2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ip_email2"/>
+                                    <PropertyValue Property="Value" Path="ip_email2"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_id"/>
+                                    <PropertyValue Property="Value" Path="bp_id"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_min"/>
+                                    <PropertyValue Property="Value" Path="bp_min"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_name"/>
+                                    <PropertyValue Property="Value" Path="bp_name"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_repres"/>
+                                    <PropertyValue Property="Value" Path="bp_repres"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_addr"/>
+                                    <PropertyValue Property="Value" Path="bp_addr"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_bustype"/>
+                                    <PropertyValue Property="Value" Path="bp_bustype"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_indtype"/>
+                                    <PropertyValue Property="Value" Path="bp_indtype"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_deptname"/>
+                                    <PropertyValue Property="Value" Path="bp_deptname"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_persname"/>
+                                    <PropertyValue Property="Value" Path="bp_persname"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_telno"/>
+                                    <PropertyValue Property="Value" Path="bp_telno"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_hpno"/>
+                                    <PropertyValue Property="Value" Path="bp_hpno"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="bp_email"/>
+                                    <PropertyValue Property="Value" Path="bp_email"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="chargetotal"/>
+                                    <PropertyValue Property="Value" Path="chargetotal"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="taxtotal"/>
+                                    <PropertyValue Property="Value" Path="taxtotal"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="grandtotal"/>
+                                    <PropertyValue Property="Value" Path="grandtotal"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="issue_dt"/>
+                                    <PropertyValue Property="Value" Path="issue_dt"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="issue_id"/>
+                                    <PropertyValue Property="Value" Path="issue_id"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="status"/>
+                                    <PropertyValue Property="Value" Path="status"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="proc_step"/>
+                                    <PropertyValue Property="Value" Path="proc_step"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="aspid"/>
+                                    <PropertyValue Property="Value" Path="aspid"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="asppw"/>
+                                    <PropertyValue Property="Value" Path="asppw"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="nts_send_flag"/>
+                                    <PropertyValue Property="Value" Path="nts_send_flag"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="open_flag"/>
+                                    <PropertyValue Property="Value" Path="open_flag"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="interface_no"/>
+                                    <PropertyValue Property="Value" Path="interface_no"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="aedat"/>
+                                    <PropertyValue Property="Value" Path="aedat"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="aezei"/>
+                                    <PropertyValue Property="Value" Path="aezei"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="aeusn"/>
+                                    <PropertyValue Property="Value" Path="aeusn"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="erdat"/>
+                                    <PropertyValue Property="Value" Path="erdat"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="erzet"/>
+                                    <PropertyValue Property="Value" Path="erzet"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Label" String="ernam"/>
+                                    <PropertyValue Property="Value" Path="ernam"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.Facets">
+                    <Collection>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="ID" String="GeneratedFacet1"/>
+                            <PropertyValue Property="Label" String="General Information"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#GeneratedGroup"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

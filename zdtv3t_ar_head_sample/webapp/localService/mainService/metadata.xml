@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="SAP__common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Measures.V1" Alias="SAP__measures"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Core.V1" Alias="SAP__core"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="SAP__capabilities"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="SAP__aggregation"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="SAP__validation"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.CodeList.v1" Alias="SAP__CodeList"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="SAP__UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HTML5',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="SAP__HTML5"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PDF',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.PDF.v1" Alias="SAP__PDF"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_SESSION',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Session.v1" Alias="SAP__session"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ODM',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.ODM.v1" Alias="SAP__ODM"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HIERARCHY',Version='0001',SAP__Origin='LOCAL')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Hierarchy.v1" Alias="SAP__hierarchy"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="com.sap.gateway.srvd.zrap_srv_zdtv3t_ar_head.v0001" Alias="SAP__self">
+            <Annotation Term="SAP__core.SchemaVersion" String="1.0.0"/>
+            <EntityType Name="ZRAP_C_ZDTV3T_AR_HEADType">
+                <Key>
+                    <PropertyRef Name="bukrs"/>
+                    <PropertyRef Name="issue_date"/>
+                    <PropertyRef Name="bupla"/>
+                    <PropertyRef Name="inv_seq"/>
+                </Key>
+                <Property Name="bukrs" Type="Edm.String" Nullable="false" MaxLength="12"/>
+                <Property Name="issue_date" Type="Edm.String" Nullable="false" MaxLength="24"/>
+                <Property Name="bupla" Type="Edm.String" Nullable="false" MaxLength="12"/>
+                <Property Name="inv_seq" Type="Edm.String" Nullable="false" MaxLength="72"/>
+                <Property Name="inter_no" Type="Edm.String" Nullable="false" MaxLength="72"/>
+                <Property Name="inv_sign" Type="Edm.String" Nullable="false" MaxLength="3"/>
+                <Property Name="asp_code" Type="Edm.String" Nullable="false" MaxLength="24"/>
+                <Property Name="type_code" Type="Edm.String" Nullable="false" MaxLength="12"/>
+                <Property Name="purp_code" Type="Edm.String" Nullable="false" MaxLength="6"/>
+                <Property Name="amend_code" Type="Edm.String" Nullable="false" MaxLength="6"/>
+                <Property Name="issue_id_old" Type="Edm.String" Nullable="false" MaxLength="72"/>
+                <Property Name="desc_text1" Type="Edm.String" Nullable="false" MaxLength="450"/>
+                <Property Name="desc_text2" Type="Edm.String" Nullable="false" MaxLength="450"/>
+                <Property Name="desc_text3" Type="Edm.String" Nullable="false" MaxLength="450"/>
+                <Property Name="su_id" Type="Edm.String" Nullable="false" MaxLength="39"/>
+                <Property Name="su_min" Type="Edm.String" Nullable="false" MaxLength="12"/>
+                <Property Name="su_name" Type="Edm.String" Nullable="false" MaxLength="600"/>
+                <Property Name="su_repres" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="su_addr" Type="Edm.String" Nullable="false" MaxLength="765"/>
+                <Property Name="su_bustype" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="su_indtype" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="su_deptname" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="su_persname" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="su_telno" Type="Edm.String" Nullable="false" MaxLength="60"/>
+                <Property Name="su_hpno" Type="Edm.String" Nullable="false" MaxLength="60"/>
+                <Property Name="su_email" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="ip_typecode" Type="Edm.String" Nullable="false" MaxLength="6"/>
+                <Property Name="ip_id" Type="Edm.String" Nullable="false" MaxLength="39"/>
+                <Property Name="ip_min" Type="Edm.String" Nullable="false" MaxLength="12"/>
+                <Property Name="ip_name" Type="Edm.String" Nullable="false" MaxLength="600"/>
+                <Property Name="ip_repres" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="ip_addr" Type="Edm.String" Nullable="false" MaxLength="765"/>
+                <Property Name="ip_bustype" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="ip_indtype" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="ip_deptname1" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="ip_persname1" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="ip_telno1" Type="Edm.String" Nullable="false" MaxLength="60"/>
+                <Property Name="ip_hpno1" Type="Edm.String" Nullable="false" MaxLength="60"/>
+                <Property Name="ip_email1" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="ip_deptname2" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="ip_persname2" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="ip_telno2" Type="Edm.String" Nullable="false" MaxLength="60"/>
+                <Property Name="ip_hpno2" Type="Edm.String" Nullable="false" MaxLength="60"/>
+                <Property Name="ip_email2" Type="Edm.String" Nullable="false" MaxLength="300"/>
+                <Property Name="bp_id" Type="Edm.String" Nullable="false" MaxLength="39"/>
+                <Property Name="bp_min" Type="Edm.String" Nullable="false" MaxLength="12"/>
+                <Property Name="bp_name" Type="Edm.String" Nullable="false" MaxLength="600"/>
+                <Property Name="bp_repres" Type="Edm.String" Nullable="false" MaxLength="90"/>
+                <Property Name="bp_addr" Type="Edm.String" Nullable="false" MaxLength="450"/>
+                <Property Name="bp_bustype" Type="Edm.String" Nullable="false" MaxLength="120"/>
+                <Property Name="bp_indtype" Type="Edm.String" Nullable="false" MaxLength="120"/>
+                <Property Name="bp_deptname" Type="Edm.String" Nullable="false" MaxLength="120"/>
+                <Property Name="bp_persname" Type="Edm.String" Nullable="false" MaxLength="90"/>
+                <Property Name="bp_telno" Type="Edm.String" Nullable="false" MaxLength="60"/>
+                <Property Name="bp_hpno" Type="Edm.String" Nullable="false" MaxLength="60"/>
+                <Property Name="bp_email" Type="Edm.String" Nullable="false" MaxLength="120"/>
+                <Property Name="chargetotal" Type="Edm.Decimal" Nullable="false" Precision="16" Scale="2"/>
+                <Property Name="taxtotal" Type="Edm.Decimal" Nullable="false" Precision="16" Scale="2"/>
+                <Property Name="grandtotal" Type="Edm.Decimal" Nullable="false" Precision="16" Scale="2"/>
+                <Property Name="issue_dt" Type="Edm.String" Nullable="false" MaxLength="42"/>
+                <Property Name="issue_id" Type="Edm.String" Nullable="false" MaxLength="72"/>
+                <Property Name="status" Type="Edm.String" Nullable="false" MaxLength="12"/>
+                <Property Name="proc_step" Type="Edm.String" Nullable="false" MaxLength="6"/>
+                <Property Name="aspid" Type="Edm.String" Nullable="false" MaxLength="90"/>
+                <Property Name="asppw" Type="Edm.String" Nullable="false" MaxLength="90"/>
+                <Property Name="nts_send_flag" Type="Edm.String" Nullable="false" MaxLength="6"/>
+                <Property Name="open_flag" Type="Edm.String" Nullable="false" MaxLength="3"/>
+                <Property Name="interface_no" Type="Edm.String" Nullable="false" MaxLength="105"/>
+                <Property Name="aedat" Type="Edm.String" Nullable="false" MaxLength="24"/>
+                <Property Name="aezei" Type="Edm.String" Nullable="false" MaxLength="18"/>
+                <Property Name="aeusn" Type="Edm.String" Nullable="false" MaxLength="36"/>
+                <Property Name="erdat" Type="Edm.String" Nullable="false" MaxLength="24"/>
+                <Property Name="erzet" Type="Edm.String" Nullable="false" MaxLength="18"/>
+                <Property Name="ernam" Type="Edm.String" Nullable="false" MaxLength="36"/>
+            </EntityType>
+            <EntityContainer Name="Container">
+                <EntitySet Name="ZRAP_C_ZDTV3T_AR_HEAD" EntityType="com.sap.gateway.srvd.zrap_srv_zdtv3t_ar_head.v0001.ZRAP_C_ZDTV3T_AR_HEADType"/>
+            </EntityContainer>
+            <Annotations Target="SAP__self.ZRAP_C_ZDTV3T_AR_HEADType/bukrs">
+                <Annotation Term="SAP__common.Label" String="회사코드"/>
+            </Annotations>
+            <Annotations Target="SAP__self.ZRAP_C_ZDTV3T_AR_HEADType">
+                <Annotation Term="SAP__common.Label" String="ZDTV3T_AR_HEAD Projection"/>
+                <Annotation Term="SAP__UI.LineItem">
+                    <Collection>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 사업자번호"/>
+                            <PropertyValue Property="Value" Path="su_id"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 사업자명"/>
+                            <PropertyValue Property="Value" Path="su_name"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 대표자명"/>
+                            <PropertyValue Property="Value" Path="su_repres"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 주소"/>
+                            <PropertyValue Property="Value" Path="su_addr"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 업종"/>
+                            <PropertyValue Property="Value" Path="su_bustype"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 업태"/>
+                            <PropertyValue Property="Value" Path="su_indtype"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 담당부서"/>
+                            <PropertyValue Property="Value" Path="su_deptname"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 담당자명"/>
+                            <PropertyValue Property="Value" Path="su_persname"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 전화번호"/>
+                            <PropertyValue Property="Value" Path="su_telno"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 핸드폰번호"/>
+                            <PropertyValue Property="Value" Path="su_hpno"/>
+                        </Record>
+                        <Record Type="SAP__UI.DataField">
+                            <PropertyValue Property="Label" String="공급자 이메일"/>
+                            <PropertyValue Property="Value" Path="su_email"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="SAP__UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>bukrs</PropertyPath>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.Container/ZRAP_C_ZDTV3T_AR_HEAD">
+                <Annotation Term="SAP__capabilities.SearchRestrictions">
+                    <Record>
+                        <PropertyValue Property="Searchable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.InsertRestrictions">
+                    <Record>
+                        <PropertyValue Property="Insertable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.DeleteRestrictions">
+                    <Record>
+                        <PropertyValue Property="Deletable" Bool="false"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.UpdateRestrictions">
+                    <Record>
+                        <PropertyValue Property="Updatable" Bool="false"/>
+                        <PropertyValue Property="QueryOptions">
+                            <Record>
+                                <PropertyValue Property="SelectSupported" Bool="true"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.Container">
+                <Annotation Term="SAP__common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
+                <Annotation Term="SAP__capabilities.FilterFunctions">
+                    <Collection>
+                        <String>eq</String>
+                        <String>ne</String>
+                        <String>gt</String>
+                        <String>ge</String>
+                        <String>lt</String>
+                        <String>le</String>
+                        <String>and</String>
+                        <String>or</String>
+                        <String>contains</String>
+                        <String>startswith</String>
+                        <String>endswith</String>
+                        <String>any</String>
+                        <String>all</String>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.SupportedFormats">
+                    <Collection>
+                        <String>application/json</String>
+                        <String>application/pdf</String>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="SAP__PDF.Features">
+                    <Record>
+                        <PropertyValue Property="DocumentDescriptionReference" String="../../../../default/iwbep/common/0001/$metadata"/>
+                        <PropertyValue Property="DocumentDescriptionCollection" String="MyDocumentDescriptions"/>
+                        <PropertyValue Property="ArchiveFormat" Bool="true"/>
+                        <PropertyValue Property="Border" Bool="true"/>
+                        <PropertyValue Property="CoverPage" Bool="true"/>
+                        <PropertyValue Property="FitToPage" Bool="true"/>
+                        <PropertyValue Property="FontName" Bool="true"/>
+                        <PropertyValue Property="FontSize" Bool="true"/>
+                        <PropertyValue Property="HeaderFooter" Bool="true"/>
+                        <PropertyValue Property="IANATimezoneFormat" Bool="true"/>
+                        <PropertyValue Property="Margin" Bool="true"/>
+                        <PropertyValue Property="Padding" Bool="true"/>
+                        <PropertyValue Property="ResultSizeDefault" Int="20000"/>
+                        <PropertyValue Property="ResultSizeMaximum" Int="20000"/>
+                        <PropertyValue Property="Signature" Bool="true"/>
+                        <PropertyValue Property="TextDirectionLayout" Bool="true"/>
+                        <PropertyValue Property="Treeview" Bool="true"/>
+                        <PropertyValue Property="UploadToFileShare" Bool="true"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="SAP__capabilities.KeyAsSegmentSupported"/>
+                <Annotation Term="SAP__capabilities.AsynchronousRequestsSupported"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
